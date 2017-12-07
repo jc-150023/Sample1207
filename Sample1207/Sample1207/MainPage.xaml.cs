@@ -12,6 +12,10 @@ namespace Sample1207
 		public MainPage()
 		{
 			InitializeComponent();
+
+            this.Padding = new Thickness(0, Device.OnPlatform(20, 0, 0), 0, 0);
+
+            this.listView.ItemSource = Enumerable.Range(0, 100).Select(n => $"item-{n}");
 		}
 	}
 }

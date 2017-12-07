@@ -5,6 +5,7 @@
              x:Class="Sample1207.MainPage">
     <ContentPage.Content>
         <StackLayout>
+            <ListView x:Name="listView"/>
             <Label Text="Welcome to Xamarin.Forms!"
                 VerticalOptions="CenterAndExpand" 
                 HorizontalOptions="CenterAndExpand" />
